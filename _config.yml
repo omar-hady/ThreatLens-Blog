@@ -24,9 +24,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@domain.com
-author: GitHub User
+title: ThreatLens
+email: omarhadyabass@gmail.com
+author: Omar Alnajjar
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
@@ -40,12 +40,11 @@ author: GitHub User
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
 #   "Copyright © 2017-2021 Foobar"
 #
-copyright: "Unpublished Work (cleft) 2017-{currentYear} {author}"
+copyright: "Copyright © 2024-{currentYear} {author} - ThreatLens Cybersecurity Blog"
 
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  ThreatLens - Your comprehensive cybersecurity glossary covering fundamental concepts, advanced techniques, 
+  security tools, and threat types. Quick reference for security professionals and enthusiasts.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. https://example.com
@@ -108,7 +107,7 @@ yat:
 # spacegrey: #353535
 # snowwhite: #ffffff
 #
-# theme_color: snowwhite
+theme_color: "#1a1a1a"
 #
 # Custom color as below:
 # theme_color: "#882250"
@@ -119,7 +118,7 @@ yat:
 # greatgold: #f2cb05
 # greenblue: #389092
 #
-# brand_color: orangered
+brand_color: "#ff6b35"
 #
 # Custom color as below:
 # brand_color: "#1a8e42"
@@ -152,12 +151,13 @@ yat:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-# header_pages:
-#   - index.html
-#   - archives.html
-#   - categories.html
-#   - tags.html
-#   - about.md
+header_pages:
+  - index.html
+  - archives.html
+  - categories.html
+  - tags.html
+  - about.html
+  - glossary.html
 
 # Page default value
 # defaults:

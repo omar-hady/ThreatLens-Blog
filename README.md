@@ -1,16 +1,13 @@
 <div align="center">
   <br>
 
-  <a href="https://github.com/jeffreytse/jekyll-theme-yat">
-    <img alt="jekyll-theme-yat →~ jekyll" src="https://user-images.githubusercontent.com/9413601/106478481-346fdf00-64e4-11eb-9385-1ab5329c3234.png" width="600">
-  </a>
-
-  <h1>JEKYLL YAT THEME</h1>
+  <h1>📚 GLOSSARY</h1>
+  <h3>Cybersecurity Glossary & Reference Platform</h3>
 
 </div>
 
 <h4 align="center">
-  <a href="https://jekyllrb.com/" target="_blank"><code>Jekyll</code></a> theme for elegant writers.
+  A comprehensive cybersecurity resource built with <a href="https://jekyllrb.com/" target="_blank"><code>Jekyll</code></a> and the YAT theme.
 </h4>
 
 <p align="center">
@@ -47,21 +44,21 @@
 
 <div align="center">
   <sub>Built with ❤︎ by
-  <a href="https://jeffreytse.net">jeffreytse</a> and
-  <a href="https://github.com/jeffreytse/jekyll-theme-yat/graphs/contributors">contributors </a>
+  <a href="mailto:omarhadyabass@gmail.com">Omar Alnajjar</a> | 
+  Based on <a href="https://github.com/jeffreytse/jekyll-theme-yat">Jekyll YAT Theme</a>
   </sub>
 </div>
 
 <br>
 
-Hey, nice to meet you, you found this [Jekyll][jekyll] theme. Here the
-_YAT (Yet Another Theme)_ is a modern responsive theme. It's quite
-clear, clean and neat for writers and posts. **If you are an elegant
-writer and focus on content, don't miss it.**
+Welcome to **GLOSSARY**, your comprehensive cybersecurity glossary. This platform is dedicated to 
+providing clear definitions, practical examples, and comprehensive coverage of cybersecurity concepts. 
+**If you're passionate about cybersecurity and want to understand the terminology, tools, and threats, 
+you're in the right place.**
 
 <p align="center">
-Like this elegant theme? You can give it a star or sponsor me!<br>
-I will respect your crucial support and say THANK YOU!
+Interested in cybersecurity? Explore GLOSSARY for comprehensive definitions!<br>
+Your feedback and collaboration are always welcome.
 </p>
 
 <p align="center">
@@ -78,25 +75,29 @@ I will respect your crucial support and say THANK YOU!
 
 </p>
 
-## Features
+## What We Cover
 
-- Support beautiful **Night Mode**.
-- Modern responsive web design.
-- Full layouts `home`, `post`, `tags`, `archive` and `about`.
-- Uses font awesome 5 for icons.
-- Beautiful page banner with image and video.
-- Beautiful Syntax Highlight using [highlight.js][highlight-js].
-- Beautiful image gallery previewer using [PhotoSwipe 5][photoswipe-5].
-- RSS support using [Jekyll Feed][jekyll-feed] gem.
-- Optimized for search engines using [Jekyll Seo Tag][jekyll-seo-tag] gem.
-- Sitemap support using [Jekyll Sitemap][jekyll-sitemap] gem.
-- Complex and flexible table support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- MathJAX and LaTeX optional support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Media (Youtube, Spotify, etc.) support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Diagram (PlantUML, Mermaid) support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Google Translation support.
-- New post tag support.
-- Pin post tag support.
+- 🔒 **Threat Intelligence & Analysis** - Latest cyber threats and attack patterns
+- 🛡️ **Vulnerability Research** - CVE analysis and exploitation techniques
+- 🛠️ **Security Tools & Techniques** - Hands-on security testing and defense
+- 📊 **Incident Response & Forensics** - Digital investigation and analysis
+- 🌐 **Network Security** - Penetration testing and network defense
+- 📱 **Mobile & IoT Security** - Emerging device security challenges
+- ☁️ **Cloud Security & DevSecOps** - Modern infrastructure security
+- 🔐 **Cryptography & Privacy** - Encryption and data protection
+
+## Blog Features
+
+- Support beautiful **Night Mode** for comfortable reading
+- Modern responsive web design optimized for all devices
+- Full layouts: `home`, `post`, `tags`, `archive` and `about`
+- Beautiful syntax highlighting for code examples
+- Image gallery support for security diagrams and screenshots
+- RSS feed for easy content subscription
+- SEO optimized for better search engine visibility
+- Sitemap support for content discovery
+- MathJAX support for technical documentation
+- Google Translation support for global accessibility
 
 Also, visit the [Live Demo][yat-live-demo] site for the theme.
 

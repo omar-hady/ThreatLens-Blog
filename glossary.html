@@ -1,0 +1,532 @@
+---
+layout: default
+title: Security Glossary
+---
+
+<div class="glossary-header" style="text-align: center; padding: 40px 20px; margin-bottom: 40px; background: #f8f9fa; border-radius: 8px;">
+  <h1 style="color: #2c3e50; font-size: 2.5em; margin-bottom: 20px; font-weight: 700;">📚 Security Glossary</h1>
+  <p style="font-size: 1.1em; margin-bottom: 30px; color: #6c757d; max-width: 700px; margin-left: auto; margin-right: auto;">
+    Comprehensive cybersecurity glossary covering fundamental concepts, advanced techniques, and practical examples for security professionals and enthusiasts
+  </p>
+  
+  <div class="glossary-search" style="margin-bottom: 20px;">
+    <input type="text" id="glossarySearch" placeholder="🔍 Search for a term..." 
+           style="padding: 12px 20px; border: 2px solid #e9ecef; border-radius: 25px; width: 300px; font-size: 1em; outline: none; transition: all 0.3s ease;">
+  </div>
+  
+  <div class="glossary-categories" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 12px;">
+    <span class="category-badge active" data-category="all">All</span>
+    <span class="category-badge" data-category="basic">Fundamentals</span>
+    <span class="category-badge" data-category="advanced">Advanced</span>
+    <span class="category-badge" data-category="tools">Tools</span>
+    <span class="category-badge" data-category="threats">Threats</span>
+  </div>
+</div>
+
+<div class="glossary-content">
+  <!-- Basic Terms -->
+  <div class="glossary-section" data-category="basic">
+    <h2 style="color: #ff6b35; border-bottom: 3px solid #ff6b35; padding-bottom: 10px; margin-bottom: 30px; font-size: 1.8em;">🔰 Fundamental Concepts</h2>
+    
+    <div class="glossary-item">
+      <h3 class="term-title">🔐 Authentication</h3>
+      <div class="term-content">
+        <p><strong>Definition:</strong> The process of verifying the identity of a user or device before granting access to resources.</p>
+        <p><strong>Examples:</strong></p>
+        <ul>
+          <li>Username and password combination</li>
+          <li>Two-factor authentication (2FA)</li>
+          <li>Biometric verification (fingerprint, facial recognition)</li>
+        </ul>
+        <div class="term-example">
+          <strong>Practical Example:</strong> When logging into Gmail, the system requires both a password and a verification code sent to your phone.
+        </div>
+      </div>
+    </div>
+
+    <div class="glossary-item">
+      <h3 class="term-title">🚪 Authorization</h3>
+      <div class="term-content">
+        <p><strong>Definition:</strong> Determining what resources a user can access and what operations they can perform.</p>
+        <p><strong>Examples:</strong></p>
+        <ul>
+          <li>Read-only permissions</li>
+          <li>Write and modify permissions</li>
+          <li>Full administrative access</li>
+        </ul>
+        <div class="term-example">
+          <strong>Practical Example:</strong> In a content management system, editors can modify articles while readers can only view them.
+        </div>
+      </div>
+    </div>
+
+    <div class="glossary-item">
+      <h3 class="term-title">🔒 Encryption</h3>
+      <div class="term-content">
+        <p><strong>Definition:</strong> Converting data into an unreadable format using mathematical algorithms to protect it from unauthorized access.</p>
+        <p><strong>Examples:</strong></p>
+        <ul>
+          <li>Data in transit encryption (HTTPS)</li>
+          <li>File storage encryption</li>
+          <li>Database encryption</li>
+        </ul>
+        <div class="term-example">
+          <strong>Practical Example:</strong> WhatsApp messages are end-to-end encrypted, making them unreadable to anyone except the sender and recipient.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Advanced Terms -->
+  <div class="glossary-section" data-category="advanced">
+    <h2 style="color: #ff6b35; border-bottom: 3px solid #ff6b35; padding-bottom: 10px; margin-bottom: 30px; font-size: 1.8em;">🚀 Advanced Techniques</h2>
+    
+    <div class="glossary-item">
+      <h3 class="term-title">🎯 Advanced Persistent Threat (APT)</h3>
+      <div class="term-content">
+        <p><strong>Definition:</strong> Sophisticated, long-term cyber attacks conducted by skilled adversaries targeting specific objectives over extended periods.</p>
+        <p><strong>Characteristics:</strong></p>
+        <ul>
+          <li>High level of technical sophistication</li>
+          <li>Targeted and well-planned objectives</li>
+          <li>Long-term persistence</li>
+          <li>Evasion of detection mechanisms</li>
+        </ul>
+        <div class="term-example">
+          <strong>Practical Example:</strong> APT29 (Cozy Bear) attacks targeting governments and international organizations over several years.
+        </div>
+      </div>
+    </div>
+
+    <div class="glossary-item">
+      <h3 class="term-title">🕵️ Zero-Day Vulnerability</h3>
+      <div class="term-content">
+        <p><strong>Definition:</strong> A security flaw unknown to developers with no available security patch.</p>
+        <p><strong>Risks:</strong></p>
+        <ul>
+          <li>No protection available</li>
+          <li>Immediate exploitation possible</li>
+          <li>Difficult to detect</li>
+        </ul>
+        <div class="term-example">
+          <strong>Practical Example:</strong> The Log4Shell vulnerability affecting millions of servers worldwide before discovery.
+        </div>
+      </div>
+    </div>
+
+    <div class="glossary-item">
+      <h3 class="term-title">🧠 Social Engineering</h3>
+      <div class="term-content">
+        <p><strong>Definition:</strong> Psychological manipulation techniques used to trick people into revealing sensitive information or performing specific actions.</p>
+        <p><strong>Methods:</strong></p>
+        <ul>
+          <li>Phishing emails</li>
+          <li>Vishing (voice phishing)</li>
+          <li>Smishing (SMS phishing)</li>
+        </ul>
+        <div class="term-example">
+          <strong>Practical Example:</strong> Fake emails claiming to be from banks requesting account updates.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tools Terms -->
+  <div class="glossary-section" data-category="tools">
+    <h2 style="color: #ff6b35; border-bottom: 3px solid #ff6b35; padding-bottom: 10px; margin-bottom: 30px; font-size: 1.8em;">🛠️ Security Tools</h2>
+    
+    <div class="glossary-item">
+      <h3 class="term-title">🔍 Penetration Testing</h3>
+      <div class="term-content">
+        <p><strong>Definition:</strong> Simulated cyber attacks to identify vulnerabilities in systems and networks.</p>
+        <p><strong>Tools:</strong></p>
+        <ul>
+          <li>Nmap - Network scanning</li>
+          <li>Metasploit - Exploitation framework</li>
+          <li>Burp Suite - Web application testing</li>
+        </ul>
+        <div class="term-example">
+          <strong>Practical Example:</strong> Using Nmap to scan open ports on a web server and identify running services.
+        </div>
+      </div>
+    </div>
+
+    <div class="glossary-item">
+      <h3 class="term-title">📊 SIEM (Security Information and Event Management)</h3>
+      <div class="term-content">
+        <p><strong>Definition:</strong> Systems that collect and analyze security data from multiple sources to detect threats.</p>
+        <p><strong>Features:</strong></p>
+        <ul>
+          <li>Continuous system monitoring</li>
+          <li>Suspicious behavior analysis</li>
+          <li>Comprehensive security reporting</li>
+        </ul>
+        <div class="term-example">
+          <strong>Practical Example:</strong> Splunk Enterprise Security monitoring all security events and alerting on failed login attempts.
+        </div>
+      </div>
+    </div>
+
+    <div class="glossary-item">
+      <h3 class="term-title">🛡️ Firewall</h3>
+      <div class="term-content">
+        <p><strong>Definition:</strong> Security systems that control network traffic based on defined rules.</p>
+        <p><strong>Types:</strong></p>
+        <ul>
+          <li>Network Firewall - Network protection</li>
+          <li>Host-based Firewall - Device protection</li>
+          <li>Web Application Firewall (WAF)</li>
+        </ul>
+        <div class="term-example">
+          <strong>Practical Example:</strong> Windows Defender Firewall preventing applications from connecting to the internet without user permission.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Threats Terms -->
+  <div class="glossary-section" data-category="threats">
+    <h2 style="color: #ff6b35; border-bottom: 3px solid #ff6b35; padding-bottom: 10px; margin-bottom: 30px; font-size: 1.8em;">⚠️ Threat Types</h2>
+    
+    <div class="glossary-item">
+      <h3 class="term-title">🦠 Malware</h3>
+      <div class="term-content">
+        <p><strong>Definition:</strong> Malicious software designed to damage systems or steal data.</p>
+        <p><strong>Types:</strong></p>
+        <ul>
+          <li>Viruses</li>
+          <li>Worms</li>
+          <li>Trojans</li>
+          <li>Ransomware</li>
+        </ul>
+        <div class="term-example">
+          <strong>Practical Example:</strong> WannaCry affecting over 300,000 devices in 150 countries, demanding ransom for file recovery.
+        </div>
+      </div>
+    </div>
+
+    <div class="glossary-item">
+      <h3 class="term-title">🌊 DDoS Attack</h3>
+      <div class="term-content">
+        <p><strong>Definition:</strong> Distributed Denial of Service attacks flooding servers with excessive requests to disrupt services.</p>
+        <p><strong>Methods:</strong></p>
+        <ul>
+          <li>SYN Flood</li>
+          <li>HTTP Flood</li>
+          <li>DNS Amplification</li>
+        </ul>
+        <div class="term-example">
+          <strong>Practical Example:</strong> 2016 DDoS attack on Dyn DNS disrupting sites like Twitter, Netflix, and Reddit.
+        </div>
+      </div>
+    </div>
+
+    <div class="glossary-item">
+      <h3 class="term-title">👥 Man-in-the-Middle Attack</h3>
+      <div class="term-content">
+        <p><strong>Definition:</strong> Attacks where attackers intercept communication between two parties to steal or modify data.</p>
+        <p><strong>Methods:</strong></p>
+        <ul>
+          <li>ARP Spoofing</li>
+          <li>DNS Spoofing</li>
+          <li>WiFi Eavesdropping</li>
+        </ul>
+        <div class="term-example">
+          <strong>Practical Example:</strong> Attackers intercepting all data when connecting to public WiFi networks.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Placement Suggestions Section -->
+<div class="placement-suggestions" style="background: #f8f9fa; padding: 30px; border-radius: 12px; margin-top: 40px; border: 2px solid #ff6b35;">
+  <h2 style="color: #2c3e50; text-align: center; margin-bottom: 25px; font-size: 1.8em;">🎯 Strategic Placement Suggestions</h2>
+  
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+    <div style="background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #ff6b35;">
+      <h3 style="color: #ff6b35; margin-bottom: 15px;">📱 Mobile App Integration</h3>
+      <p style="color: #495057; line-height: 1.6;">Integrate this glossary into mobile security apps for quick reference during field operations and incident response.</p>
+      <div style="background: #e9ecef; padding: 10px; border-radius: 6px; margin-top: 10px;">
+        <strong>Best For:</strong> Security professionals, incident responders, field technicians
+      </div>
+    </div>
+    
+    <div style="background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #ff6b35;">
+      <h3 style="color: #ff6b35; margin-bottom: 15px;">💼 Corporate Training</h3>
+      <p style="color: #495057; line-height: 1.6;">Use as part of employee cybersecurity awareness training programs and onboarding materials.</p>
+      <div style="background: #e9ecef; padding: 10px; border-radius: 6px; margin-top: 10px;">
+        <strong>Best For:</strong> HR departments, training coordinators, security awareness programs
+      </div>
+    </div>
+    
+    <div style="background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #ff6b35;">
+      <h3 style="color: #ff6b35; margin-bottom: 15px;">🎓 Educational Institutions</h3>
+      <p style="color: #495057; line-height: 1.6;">Incorporate into cybersecurity courses, workshops, and certification training programs.</p>
+      <div style="background: #e9ecef; padding: 10px; border-radius: 6px; margin-top: 10px;">
+        <strong>Best For:</strong> Universities, training centers, certification programs
+      </div>
+    </div>
+    
+    <div style="background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #ff6b35;">
+      <h3 style="color: #ff6b35; margin-bottom: 15px;">🏢 Enterprise Security</h3>
+      <p style="color: #495057; line-height: 1.6;">Embed in internal security portals, knowledge bases, and incident response playbooks.</p>
+      <div style="background: #e9ecef; padding: 10px; border-radius: 6px; margin-top: 10px;">
+        <strong>Best For:</strong> SOC teams, security analysts, IT departments
+      </div>
+    </div>
+    
+    <div style="background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #ff6b35;">
+      <h3 style="color: #ff6b35; margin-bottom: 15px;">📚 Documentation Systems</h3>
+      <p style="color: #495057; line-height: 1.6;">Include in technical documentation, API references, and developer security guidelines.</p>
+      <div style="background: #e9ecef; padding: 10px; border-radius: 6px; margin-top: 10px;">
+        <strong>Best For:</strong> Developers, technical writers, API documentation
+      </div>
+    </div>
+    
+    <div style="background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #ff6b35;">
+      <h3 style="color: #ff6b35; margin-bottom: 15px;">🔗 External Platforms</h3>
+      <p style="color: #495057; line-height: 1.6;">Share on professional networks, security forums, and industry-specific platforms.</p>
+      <div style="background: #e9ecef; padding: 10px; border-radius: 6px; margin-top: 10px;">
+        <strong>Best For:</strong> LinkedIn, Reddit, security forums, industry blogs
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.glossary-item {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.glossary-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  border-color: #ff6b35;
+}
+
+.term-title {
+  color: #2c3e50;
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ff6b35;
+  font-weight: 700;
+}
+
+.term-content p {
+  color: #2c3e50;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.term-content ul {
+  color: #495057;
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.term-content li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.term-example {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #ff6b35;
+  margin-top: 15px;
+}
+
+.term-example strong {
+  color: #ff6b35;
+}
+
+.category-badge {
+  display: inline-block;
+  background: #e9ecef;
+  color: #495057;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.category-badge:hover,
+.category-badge.active {
+  background: #ff6b35;
+  color: white;
+  border-color: #ff6b35;
+}
+
+.glossary-search input:focus {
+  border-color: #ff6b35;
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+}
+
+/* Dark Mode Support */
+html[data-theme="dark"] .glossary-header {
+  background: #3a3a3a;
+  color: #e9ecef;
+}
+
+html[data-theme="dark"] .glossary-header h1 {
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .glossary-header p {
+  color: #adb5bd;
+}
+
+html[data-theme="dark"] .glossary-item {
+  background: #3a3a3a;
+  border-color: #4a4a4a;
+  color: #e9ecef;
+}
+
+html[data-theme="dark"] .term-title {
+  color: #ffffff;
+  border-bottom-color: #ff6b35;
+}
+
+html[data-theme="dark"] .term-content p {
+  color: #e9ecef;
+}
+
+html[data-theme="dark"] .term-content ul {
+  color: #adb5bd;
+}
+
+html[data-theme="dark"] .term-example {
+  background: #2d2d2d;
+  border-left-color: #ff6b35;
+}
+
+html[data-theme="dark"] .category-badge {
+  background: #4a4a4a;
+  color: #e9ecef;
+}
+
+html[data-theme="dark"] .category-badge:hover,
+html[data-theme="dark"] .category-badge.active {
+  background: #ff6b35;
+  color: white;
+}
+
+html[data-theme="dark"] .placement-suggestions {
+  background: #3a3a3a;
+  border-color: #ff6b35;
+  color: #e9ecef;
+}
+
+html[data-theme="dark"] .placement-suggestions h2 {
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .placement-suggestions > div > div {
+  background: #4a4a4a;
+  color: #e9ecef;
+}
+
+html[data-theme="dark"] .placement-suggestions h3 {
+  color: #ff6b35;
+}
+
+html[data-theme="dark"] .placement-suggestions p {
+  color: #adb5bd;
+}
+
+html[data-theme="dark"] .placement-suggestions > div > div > div {
+  background: #2d2d2d;
+  color: #e9ecef;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .glossary-header h1 {
+    font-size: 2em;
+  }
+  
+  .glossary-search input {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .glossary-categories {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .glossary-item {
+    padding: 20px;
+  }
+  
+  .placement-suggestions > div {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('glossarySearch');
+  const categoryBadges = document.querySelectorAll('.category-badge');
+  const glossaryItems = document.querySelectorAll('.glossary-item');
+  const glossarySections = document.querySelectorAll('.glossary-section');
+
+  // Search functionality
+  searchInput.addEventListener('input', function() {
+    const searchTerm = this.value.toLowerCase();
+    
+    glossaryItems.forEach(item => {
+      const title = item.querySelector('.term-title').textContent.toLowerCase();
+      const content = item.querySelector('.term-content').textContent.toLowerCase();
+      
+      if (title.includes(searchTerm) || content.includes(searchTerm)) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  });
+
+  // Category filtering
+  categoryBadges.forEach(badge => {
+    badge.addEventListener('click', function() {
+      const category = this.dataset.category;
+      
+      // Update active badge
+      categoryBadges.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      
+      // Filter items
+      if (category === 'all') {
+        glossaryItems.forEach(item => item.style.display = 'block');
+        glossarySections.forEach(section => section.style.display = 'block');
+      } else {
+        glossarySections.forEach(section => {
+          if (section.dataset.category === category) {
+            section.style.display = 'block';
+            section.querySelectorAll('.glossary-item').forEach(item => item.style.display = 'block');
+          } else {
+            section.style.display = 'none';
+          }
+        });
+      }
+      
+      // Clear search
+      searchInput.value = '';
+    });
+  });
+});
+</script>

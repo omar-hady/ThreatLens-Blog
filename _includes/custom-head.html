@@ -4,3 +4,410 @@
   1. Head over to https://realfavicongenerator.net/ to add your own favicons.
   2. Customize default _includes/custom-head.html in your source directory and insert the given code snippet.
 {% endcomment %}
+
+<style>
+/* ThreatLens - Numerama Style Customization */
+
+:root {
+  --primary-color: #ff6b35;
+  --secondary-color: #1a1a1a;
+  --accent-color: #e74c3c;
+  --text-color: #2c3e50;
+  --light-text: #7f8c8d;
+  --background: #ffffff;
+  --card-bg: #f8f9fa;
+  --border-color: #e9ecef;
+  --shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Header Styling - Original Theme */
+/* Note: Header styling is now handled by the original YAT theme */
+
+/* Banner Styling - Original Theme */
+/* Note: Banner styling is now handled by the original YAT theme */
+
+/* Post Cards - Clean & Simple */
+.post-item {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border: 1px solid #e9ecef;
+  transition: all 0.2s ease;
+}
+
+.post-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-color: var(--primary-color);
+}
+
+.post-item .post-title {
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 1.4em;
+  margin-bottom: 12px;
+}
+
+.post-item .post-subtitle {
+  color: var(--light-text);
+  font-size: 1.1em;
+  margin-bottom: 16px;
+}
+
+.post-item .post-meta {
+  color: var(--light-text);
+  font-size: 0.9em;
+}
+
+.post-item .post-excerpt {
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Category Tags - Clean & Simple */
+.post-tags .post-tag {
+  background: #f8f9fa;
+  color: #495057 !important;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: 500;
+  border: 1px solid #dee2e6;
+  margin: 2px;
+  transition: all 0.2s ease;
+}
+
+.post-tags .post-tag:hover {
+  background: var(--primary-color);
+  color: white !important;
+  border-color: var(--primary-color);
+}
+
+/* Sidebar Styling */
+.sidebar {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.sidebar h3 {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+/* Footer Styling - Clean & Simple */
+.site-footer {
+  background: #f8f9fa;
+  color: #6c757d;
+  border-top: 1px solid #dee2e6;
+}
+
+.site-footer a {
+  color: var(--primary-color);
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Dark Mode Enhancements - Custom ThreatLens Theme */
+html[data-theme="dark"] {
+  --background: #2d2d2d;
+  --card-bg: #3a3a3a;
+  --text-color: #e9ecef;
+  --light-text: #adb5bd;
+  --border-color: #4a4a4a;
+  --shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+html[data-theme="dark"] .post-item {
+  background: var(--card-bg);
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+html[data-theme="dark"] .post-item .post-title {
+  color: var(--text-color);
+}
+
+html[data-theme="dark"] .post-item .post-subtitle {
+  color: var(--light-text);
+}
+
+html[data-theme="dark"] .post-item .post-excerpt {
+  color: var(--text-color);
+}
+
+html[data-theme="dark"] .post-tags .post-tag {
+  background: #4a4a4a;
+  color: #e9ecef !important;
+  border-color: #5a5a5a;
+}
+
+html[data-theme="dark"] .post-tags .post-tag:hover {
+  background: var(--primary-color);
+  color: white !important;
+  border-color: var(--primary-color);
+}
+
+html[data-theme="dark"] .sidebar {
+  background: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+html[data-theme="dark"] .sidebar h3 {
+  color: var(--text-color);
+  border-bottom-color: var(--primary-color);
+}
+
+html[data-theme="dark"] .site-footer {
+  background: #2d2d2d;
+  color: #adb5bd;
+  border-top-color: #4a4a4a;
+}
+
+html[data-theme="dark"] .security-badge {
+  background: var(--primary-color);
+  color: white;
+}
+
+html[data-theme="dark"] .threat-level.high {
+  background: #dc3545;
+  color: white;
+}
+
+html[data-theme="dark"] .threat-level.medium {
+  background: #fd7e14;
+  color: white;
+}
+
+html[data-theme="dark"] .threat-level.low {
+  background: #198754;
+  color: white;
+}
+
+/* Dark Mode - Page Specific Styling */
+html[data-theme="dark"] .page-banner {
+  background: linear-gradient(135deg, #2d2d2d 0%, #3a3a3a 100%);
+}
+
+html[data-theme="dark"] .page-banner .page-banner-img > *:first-child {
+  color: #ffffff !important;
+}
+
+html[data-theme="dark"] .page-banner .page-banner-img > *:nth-child(2) {
+  color: #adb5bd !important;
+}
+
+/* Dark Mode - About Page Styling */
+html[data-theme="dark"] .about-page-header {
+  background: #3a3a3a;
+  color: #ffffff;
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
+
+html[data-theme="dark"] .about-page-content {
+  background: #3a3a3a;
+  border-color: var(--primary-color);
+  color: #e9ecef;
+  border-left: 4px solid var(--primary-color);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+html[data-theme="dark"] .about-page-content:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+  border-left-width: 6px;
+  background: #404040;
+}
+
+html[data-theme="dark"] .about-page-content h3 {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+html[data-theme="dark"] .about-page-content ul li {
+  color: #e9ecef;
+  padding: 4px 0;
+  border-left: 2px solid transparent;
+  padding-left: 12px;
+  transition: all 0.2s ease;
+}
+
+html[data-theme="dark"] .about-page-content ul li:hover {
+  border-left-color: var(--primary-color);
+  padding-left: 16px;
+  color: var(--primary-color);
+  font-weight: 500;
+  background: #404040;
+  padding: 6px 0 6px 16px;
+  border-radius: 4px;
+}
+
+html[data-theme="dark"] .about-page-contact {
+  background: #3a3a3a;
+  border-color: var(--primary-color);
+  color: #e9ecef;
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
+
+/* Dark Mode - General Improvements */
+html[data-theme="dark"] body {
+  background-color: var(--background);
+  color: var(--text-color);
+}
+
+html[data-theme="dark"] .main-content {
+  background-color: var(--background);
+}
+
+html[data-theme="dark"] .page-content {
+  background-color: var(--background);
+}
+
+/* Dark Mode - Code Blocks */
+html[data-theme="dark"] pre {
+  background-color: #2d2d2d;
+  border-color: var(--primary-color);
+  border-left: 4px solid var(--primary-color);
+}
+
+html[data-theme="dark"] code {
+  background-color: #3a3a3a;
+  color: #e9ecef;
+  border: 1px solid #4a4a4a;
+}
+
+/* Dark Mode - Links */
+html[data-theme="dark"] a {
+  color: var(--primary-color);
+}
+
+html[data-theme="dark"] a:hover {
+  color: #e55a2b;
+  text-decoration: underline;
+}
+
+/* Dark Mode - Tables */
+html[data-theme="dark"] table {
+  background-color: var(--card-bg);
+  border-color: var(--primary-color);
+}
+
+html[data-theme="dark"] th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+html[data-theme="dark"] td {
+  border-color: #4a4a4a;
+  color: #e9ecef;
+}
+
+/* Dark Mode - Glossary Page Styling */
+html[data-theme="dark"] .glossary-header {
+  background: #3a3a3a;
+  color: #e9ecef;
+}
+
+html[data-theme="dark"] .glossary-header h1 {
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .glossary-header p {
+  color: #adb5bd;
+}
+
+html[data-theme="dark"] .glossary-item {
+  background: #3a3a3a;
+  border-color: #4a4a4a;
+  color: #e9ecef;
+}
+
+html[data-theme="dark"] .term-title {
+  color: #ffffff;
+  border-bottom-color: #ff6b35;
+}
+
+html[data-theme="dark"] .term-content p {
+  color: #e9ecef;
+}
+
+html[data-theme="dark"] .term-content ul {
+  color: #adb5bd;
+}
+
+html[data-theme="dark"] .term-example {
+  background: #2d2d2d;
+  border-left-color: #ff6b35;
+}
+
+html[data-theme="dark"] .category-badge {
+  background: #4a4a4a;
+  color: #e9ecef;
+}
+
+html[data-theme="dark"] .category-badge:hover,
+html[data-theme="dark"] .category-badge.active {
+  background: #ff6b35;
+  color: white;
+}
+
+/* Responsive Design - Original Theme */
+/* Note: Responsive design is now handled by the original YAT theme */
+
+/* Cybersecurity Theme Elements */
+.cyber-grid {
+  background-image: 
+    linear-gradient(rgba(255,107,53,0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,107,53,0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.security-badge {
+  display: inline-block;
+  background: var(--primary-color);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 2px;
+}
+
+.threat-level {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.threat-level.high {
+  background: #e74c3c;
+  color: white;
+}
+
+.threat-level.medium {
+  background: #f39c12;
+  color: white;
+}
+
+.threat-level.low {
+  background: #27ae60;
+  color: white;
+}
+</style>
